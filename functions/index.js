@@ -1,4 +1,4 @@
-const functions = require('firebase-functions');
+const functions = require('firebase-functions')
 const express = require('express')
 const jenosizeController = require('./controllers/jenosize.controller')
 const bodyParser = require('body-parser')
@@ -20,3 +20,5 @@ app.post('/jenosize/search-place', jenosizeController.searchPlace)
 //   functions.logger.info("Hello logs!", {structuredData: true});
 //   response.send("Hello from Firebase!");
 // });
+
+exports.app = functions.https.onRequest(app)

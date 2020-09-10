@@ -2,7 +2,7 @@ const solve24 = require('../utils/game24')
 const fetch = require("node-fetch")
 
 const game24 = (req, res) => {
-  const result = solve24(req.body.numbers)
+  const result = solve24(req.body.numbers) ? 'YES' : 'NO'
   res.send({
     result,
   })
