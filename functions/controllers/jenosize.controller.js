@@ -14,7 +14,7 @@ const game24 = (req, res) => {
   }
   else if (someIsZeroOrMoreThanTen) {
     res.status(400).send({
-      message: 'กรุณาใส่ตัวเลข 0-9 เท่านั้น'
+      message: 'กรุณาใส่ตัวเลข 1-9 เท่านั้น'
     })
   }
   else {
