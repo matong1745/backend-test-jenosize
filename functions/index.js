@@ -13,12 +13,5 @@ app.listen(port, () => {
 
 app.post('/jenosize/game-24', jenosizeController.game24)
 app.post('/jenosize/search-place', jenosizeController.searchPlace)
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
-// exports.helloWorld = functions.https.onRequest((request, response) => {
-//   functions.logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
 
 exports.app = functions.https.onRequest(app)
